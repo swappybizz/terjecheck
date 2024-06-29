@@ -7,7 +7,7 @@ st.set_page_config(page_title="Sjekkliste", page_icon=":clipboard:")
 
 MONGO_URI = st.secrets["mongo_uri"]
 client = MongoClient(MONGO_URI)
-db = client['Stig_checklist']
+db = client['Terje_checklist']
 collection = db['checklist']
 
 client_submissions = db['client_submissions']
